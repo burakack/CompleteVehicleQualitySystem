@@ -1,0 +1,82 @@
+
+  networks:
+    appnetwork:
+      driver: bridge
+
+  services:
+    auth-service:
+      container_name: auth-service
+      build:
+        dockerfile: ./AuthService/Dockerfile
+      image: auth-service:latest
+      ports:
+        - 3000:3000
+      networks:
+        - appnetwork
+      depends_on:
+        - postgres
+        - defect-entry-service
+    defect-entry-service:
+      container_name: defect-entry-service
+      build:
+        dockerfile: ./DefectEntryService/Dockerfile
+      image: defect-entry-service:latest
+      ports:
+        - 3004:3004
+      networks:
+        - appnetwork
+      depends_on:
+        - postgres
+        - terminal-service
+    terminal-service:
+      container_name: terminal-service
+      build:
+        dockerfile: ./TerminalService/Dockerfile
+      image: terminal-service:latest
+      ports:
+        - 3001:3001
+      networks:
+        - appnetwork
+      depends_on:
+        - postgres
+        - defect-list-service
+    defect-list-service:
+      container_name: defect-list-service
+      build:
+        dockerfile: ./DefectListService/Dockerfile
+      image: defect-list-service:latest
+      ports:
+        - 3003:3003
+      networks:
+        - appnetwork
+      depends_on:
+        - postgres
+        - user-management-service
+    user-management-service:
+      container_name: user-management-service
+      build:
+        dockerfile: ./UserManagementService/Dockerfile
+      image: user-management-service:latest
+      ports:
+        - 3002:3002
+      networks:
+        - appnetwork
+      depends_on:
+        - postgres
+
+    postgres:
+      container_name: postgres_container
+      image: postgres
+      environment:
+        POSTGRES_DB: CompleteVehicleQualitySystem
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+        PGDATA: /data/postgres
+      ports:
+        - "5432:5432"
+      networks:
+        - appnetwork
+      restart: unless-stopped
+
+volumes:
+  postgres:
