@@ -1,14 +1,18 @@
 package com.BurakAciker.UserManagementService.service;
 import com.BurakAciker.UserManagementService.domain.AppUser;
+import com.BurakAciker.UserManagementService.dto.RegisterRequest;
+import org.springframework.http.ResponseEntity;
 
 public interface AppUserService {
 
     /**
      * Yeni bir kullanıcı oluşturur.
-     * @param appUser
-     * Kullanıcı nesnesi
+     * @param request
+     * Kullanıcı bilgileri
+     * @return ResponseEntity
      */
-    void createAppUser(AppUser appUser);
+    public ResponseEntity<String> register(RegisterRequest request);
+
     /**
      * Belirli bir kullanıcı adına sahip kullanıcıyı geri döndürür.
      * @param username
@@ -19,10 +23,11 @@ public interface AppUserService {
 
     /**
      * Bir kullanıcıyı siler.
-     * @param appUser
+     * @param username
      * Kullanıcı nesnesi
      */
-    void deleteAppUser(AppUser appUser);
+    void deleteAppUser(String username);
+
     /**
      * Bir kullanıcının bilgilerini günceller.
      * @param appUser
