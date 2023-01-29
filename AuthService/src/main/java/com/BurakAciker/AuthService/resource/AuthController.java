@@ -34,21 +34,21 @@ public class AuthController{
         return ResponseEntity.ok(service.authenticate(request));
     }
 
-    @PostMapping("/isadmin")
+    @PostMapping("/isADMIN")
     @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<AuthenticationResponse> isAdmin(
     ) {
         return ResponseEntity.ok().build();
     }
 
-    @PostMapping("/isoperator")
+    @PostMapping("/isOPERATOR")
     @PreAuthorize("hasAuthority('OPERATOR')")
     public ResponseEntity<AuthenticationResponse> isOperator(
     ) {
         return ResponseEntity.ok().build();
     }
 
-    @PostMapping("/isteamlead")
+    @PostMapping("/isTEAMLEAD")
     @PreAuthorize("hasAuthority('TEAMLEAD')")
     public ResponseEntity<AuthenticationResponse> isTeamLead(
     ) {
