@@ -25,15 +25,15 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencyManagement>
-				<dependencies>
-					<dependency>
-						<groupId>org.springframework.boot</groupId>
-						<artifactId>spring-boot-dependencies</artifactId>
-						<version>3.0.0</version>
-						<scope>import</scope>
-						<type>pom</type>
-					</dependency>
-				</dependencies>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<scope>import</scope>
+				<type>pom</type>
+				<version>3.0.0</version>
+			</dependency>
+		</dependencies>
 	</dependencyManagement>
 	<dependencies>
 		<dependency>
@@ -65,11 +65,6 @@
 	<build>
 		<pluginManagement>
 			<plugins>
-				<plugin>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-maven-plugin</artifactId>
-					<version>2.3.0.RELEASE</version>
-				</plugin>
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
