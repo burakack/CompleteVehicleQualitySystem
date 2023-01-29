@@ -1,12 +1,9 @@
 package com.BurakAciker.AuthService.resource;
 
-import com.BurakAciker.AuthService.domain.Role;
 import com.BurakAciker.AuthService.dto.AuthenticationRequest;
 import com.BurakAciker.AuthService.dto.AuthenticationResponse;
 import com.BurakAciker.AuthService.dto.RegisterRequest;
-import com.BurakAciker.AuthService.service.AppUserService;
 import com.BurakAciker.AuthService.service.AuthenticationServiceImpl;
-import com.BurakAciker.AuthService.service.RoleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;

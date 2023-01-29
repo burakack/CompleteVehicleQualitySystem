@@ -2,10 +2,13 @@ package com.BurakAciker.UserManagementService.service;
 
 import com.BurakAciker.UserManagementService.domain.AppUser;
 import com.BurakAciker.UserManagementService.domain.Role;
+import com.BurakAciker.UserManagementService.dto.RegisterRequest;
 import com.BurakAciker.UserManagementService.repository.AppUserRepository;
 import com.BurakAciker.UserManagementService.repository.RoleRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -16,10 +19,18 @@ public class AppUserServiceImpl implements AppUserService {
 
     private final AppUserRepository userRepository;
     private final RoleRepository roleRepository;
-
+    private final PasswordEncoder passwordEncoder;
     @Override
-    public void createAppUser(AppUser appUser) {
-    userRepository.save(appUser);
+    public ResponseEntity<String> register(RegisterRequest request) {
+        var user = AppUser.builder()
+                .name(request.getName())
+                .surname(request.getSurname())
+                .username(request.getUsername())
+                .email(request.getEmail())
+                .password(passwordEncoder.encode(request.getPassword()))
+                .build();
+        userRepository.save(user);
+        return ResponseEntity.ok("User created successfully.");
     }
 
     @Override
@@ -34,14 +45,19 @@ public class AppUserServiceImpl implements AppUserService {
     }
 
     @Override
-    public void deleteAppUser(AppUser appUser) {
-        AppUser user=userRepository.findById(appUser.getId()).get();
+    public void deleteAppUser(String username) {
+        AppUser user=userRepository.findById(userRepository.findByUsername(username).getId()).get();
         user.setDeletedAt(new Date());
     }
 
     @Override
     public void updateAppUser(AppUser appUser) {
-    //Doldur
+        AppUser user=userRepository.findById(appUser.getId()).get();
+        user.setName(appUser.getName());
+        user.setSurname(appUser.getSurname());
+        user.setUsername(appUser.getUsername());
+        user.setEmail(appUser.getEmail());
+        user.setPassword(passwordEncoder.encode(appUser.getPassword()));
     }
 
     @Override
