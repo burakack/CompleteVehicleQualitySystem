@@ -8,6 +8,7 @@ import com.BurakAciker.UserManagementService.service.AppUserService;
 import com.BurakAciker.UserManagementService.service.RestRequestsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
