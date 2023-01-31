@@ -7,7 +7,9 @@ import com.BurakAciker.UserManagementService.repository.AppUserRepository;
 import com.BurakAciker.UserManagementService.repository.RoleRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -19,15 +21,19 @@ public class AppUserServiceImpl implements AppUserService {
 
     private final AppUserRepository userRepository;
     private final RoleRepository roleRepository;
-    private final PasswordEncoder passwordEncoder;
     @Override
     public ResponseEntity<String> register(RegisterRequest request) {
+        if(userRepository.findByUsername(request.getUsername())!=null)
+            throw new ArithmeticException("Username already exists.");
+        if(userRepository.findByEmail(request.getEmail())!=null)
+            throw new ArithmeticException("Email already exists.");
+
         var user = AppUser.builder()
                 .name(request.getName())
                 .surname(request.getSurname())
                 .username(request.getUsername())
                 .email(request.getEmail())
-                .password(passwordEncoder.encode(request.getPassword()))
+                .password(  new BCryptPasswordEncoder().encode(request.getPassword()))
                 .build();
         userRepository.save(user);
         return ResponseEntity.ok("User created successfully.");
@@ -57,7 +63,7 @@ public class AppUserServiceImpl implements AppUserService {
         user.setSurname(appUser.getSurname());
         user.setUsername(appUser.getUsername());
         user.setEmail(appUser.getEmail());
-        user.setPassword(passwordEncoder.encode(appUser.getPassword()));
+        user.setPassword( new BCryptPasswordEncoder().encode(appUser.getPassword()));
     }
 
     @Override

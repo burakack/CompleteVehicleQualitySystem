@@ -29,4 +29,7 @@ public class Role {
     @Temporal(TemporalType.TIMESTAMP)
     private Date deletedAt;
 
+    public Role(String rolename) {
+        this.name = rolename;
+    }
 }
