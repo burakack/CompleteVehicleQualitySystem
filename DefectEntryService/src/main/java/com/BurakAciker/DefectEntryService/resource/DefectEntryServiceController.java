@@ -28,7 +28,7 @@ public class DefectEntryServiceController {
         service.addVehicleDefectToVehicle(request.getVehicleId(), vd.getId());
     }
     @PostMapping("/new-vehicle")
-    public void addVehicle(NewVehicleRequest newVehicleRequest, @RequestHeader("Authorization") String token){
+    public void addVehicle(@RequestBody NewVehicleRequest newVehicleRequest, @RequestHeader("Authorization") String token){
         restService.roleCheck("OPERATOR",token);
         service.newVehicle(newVehicleRequest);
     }
