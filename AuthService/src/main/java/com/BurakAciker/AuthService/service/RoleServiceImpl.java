@@ -17,10 +17,17 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public void createRole(@NotNull Role role) {
-        if(roleRepository.findByName(role.getName())!= null)
-            throw new ArithmeticException("Role already exists.");
-        else
+        Role role1=roleRepository.findByName(role.getName());
+        if(role1.getDeletedAt()==null){
+            throw new RuntimeException("Role already exists");
+        }
+        else if(role1.getDeletedAt()!=null){
+            role1.setDeletedAt(new Date());
+            throw new RuntimeException("Role already exists");
+        }
+        else {
             roleRepository.save(role);
+        }
     }
 
     @Override
@@ -36,6 +43,14 @@ public class RoleServiceImpl implements RoleService {
     @Override
     public void deleteRole(@NotNull Role role) {
         Role deletedrole=roleRepository.findByName(role.getName());
-        deletedrole.setDeletedAt(new Date());
+        if(deletedrole == null) {
+            throw new RuntimeException("Role not found");
+        }
+        if(deletedrole.getDeletedAt()!=null){
+            throw new RuntimeException("Role already deleted");
+        }else if(deletedrole.getDeletedAt()==null)
+        {
+            deletedrole.setDeletedAt(new Date());
+        }
     }
 }

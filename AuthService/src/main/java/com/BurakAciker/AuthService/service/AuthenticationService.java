@@ -6,7 +6,10 @@ import com.BurakAciker.AuthService.dto.RegisterRequest;
 
 public interface AuthenticationService {
 
-    AuthenticationResponse register(RegisterRequest request);
-
+    /**
+     * Checks jwt token and returns Token if it is valid
+     * @param request
+     * @returns AuthenticationResponse
+     */
     AuthenticationResponse authenticate(AuthenticationRequest request);
 }
