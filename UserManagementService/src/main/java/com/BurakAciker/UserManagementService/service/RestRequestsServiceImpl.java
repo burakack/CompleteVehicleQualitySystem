@@ -1,6 +1,9 @@
 package com.BurakAciker.UserManagementService.service;
 
 
+import com.BurakAciker.UserManagementService.resource.UserManagementController;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -14,6 +17,7 @@ import java.util.Locale;
 @Component
 public class RestRequestsServiceImpl implements RestRequestsService {
 
+    private final Logger logger = LogManager.getLogger(UserManagementController.class);
     @Value("${host}")
     private String host;
     @Override
@@ -23,7 +27,10 @@ public class RestRequestsServiceImpl implements RestRequestsService {
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", token);
         HttpEntity<Object> entity = new HttpEntity<>(headers);
-        return restTemplate.postForObject(url, entity, String.class);
+        logger.info("Role check request sent parameters: role:"+role+" token:"+token);
+        restTemplate.postForObject(url, entity, String.class);
+        logger.info("Role check request success");
+        return "AUTHORIZATION SUCCESSFUL";
     }
 
 }

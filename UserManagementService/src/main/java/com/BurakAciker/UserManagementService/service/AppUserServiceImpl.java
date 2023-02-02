@@ -7,6 +7,8 @@ import com.BurakAciker.UserManagementService.repository.AppUserRepository;
 import com.BurakAciker.UserManagementService.repository.RoleRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -18,15 +20,21 @@ import java.util.Date;
 @Service @RequiredArgsConstructor @Transactional
 public class AppUserServiceImpl implements AppUserService {
 
-
+    private final Logger logger = LogManager.getLogger(AppUserServiceImpl.class);
     private final AppUserRepository userRepository;
     private final RoleRepository roleRepository;
     @Override
     public ResponseEntity<String> register(RegisterRequest request) {
-        if(userRepository.findByUsername(request.getUsername())!=null)
+        logger.info("Registering user:"+request.toString());
+
+        if(userRepository.findByUsername(request.getUsername())!=null) {
+            logger.error("Username already exists.");
             throw new ArithmeticException("Username already exists.");
-        if(userRepository.findByEmail(request.getEmail())!=null)
+        }
+        if(userRepository.findByEmail(request.getEmail())!=null) {
+            logger.error("Email already exists.");
             throw new ArithmeticException("Email already exists.");
+        }
 
         var user = AppUser.builder()
                 .name(request.getName())
@@ -36,28 +44,34 @@ public class AppUserServiceImpl implements AppUserService {
                 .password(  new BCryptPasswordEncoder().encode(request.getPassword()))
                 .build();
         userRepository.save(user);
+        logger.info("User created successfully.");
         return ResponseEntity.ok("User created successfully.");
     }
 
     @Override
     public AppUser getAppUserByUsername(String username) {
-
+        logger.info("Getting user by username:"+username);
         AppUser user=userRepository.findByUsername(username);
-        if(user!=null && user.getDeletedAt()!=null )
-            return userRepository.findByUsername(username);
+        if(user!=null && user.getDeletedAt()!=null ) {
+            logger.error("User found successfully.");
+            return user;
+        }
         else{
+            logger.error("User not found.");
             throw new ArithmeticException("User not found.");
         }
     }
 
     @Override
     public void deleteAppUser(String username) {
+        logger.info("Deleting user by username:"+username);
         AppUser user=userRepository.findById(userRepository.findByUsername(username).getId()).get();
         user.setDeletedAt(new Date());
     }
 
     @Override
     public void updateAppUser(AppUser appUser) {
+        logger.info("Updating user by username:"+appUser.getUsername());
         AppUser user=userRepository.findById(appUser.getId()).get();
         user.setName(appUser.getName());
         user.setSurname(appUser.getSurname());
@@ -68,6 +82,7 @@ public class AppUserServiceImpl implements AppUserService {
 
     @Override
     public void addRoleToUser(String username, String roleName) {
+        logger.info("Adding role to user by username:"+username);
         AppUser user=userRepository.findByUsername(username);
         Role role=roleRepository.findByname(roleName);
         user.getRoles().add(role);

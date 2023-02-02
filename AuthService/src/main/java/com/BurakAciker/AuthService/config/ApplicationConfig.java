@@ -47,17 +47,14 @@ public class ApplicationConfig {
             try {
                 roleService.createRole(new Role("ADMIN"));
             } catch (Exception e) {
-                System.out.println("ADMIN Role already exists");
             }
             try {
                 roleService.createRole(new Role("TEAMLEAD"));
             } catch (Exception e) {
-                System.out.println("TEAMLEAD Role already exists");
             }
             try {
                 roleService.createRole(new Role("OPERATOR"));
             } catch (Exception e) {
-                System.out.println("OPERATOR Role already exists");
             }
         };
     }

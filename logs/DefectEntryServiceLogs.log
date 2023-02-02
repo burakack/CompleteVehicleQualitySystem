@@ -1,0 +1,93 @@
+2023-02-03 02:02:17.426  INFO DESKTOP-0N7MAR7 --- [           main] c.B.D.DefectEntryService                 : Starting DefectEntryService using Java 17.0.2 with PID 15828 (C:\Users\burak\OneDrive\Masaüstü\CompleteVehicleQualitySystem\DefectEntryService\target\classes started by burak in C:\Users\burak\OneDrive\Masaüstü\CompleteVehicleQualitySystem)
+2023-02-03 02:02:17.451  INFO DESKTOP-0N7MAR7 --- [           main] c.B.D.DefectEntryService                 : No active profile set, falling back to 1 default profile: "default"
+2023-02-03 02:02:18.631  INFO DESKTOP-0N7MAR7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-03 02:02:18.743  INFO DESKTOP-0N7MAR7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+2023-02-03 02:02:19.698  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 3004 (http)
+2023-02-03 02:02:19.714  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-3004"]
+2023-02-03 02:02:19.715  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-02-03 02:02:19.716  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-03 02:02:19.866  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-02-03 02:02:19.868  INFO DESKTOP-0N7MAR7 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2288 ms
+2023-02-03 02:02:20.172  INFO DESKTOP-0N7MAR7 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-03 02:02:20.256  INFO DESKTOP-0N7MAR7 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-03 02:02:20.536  WARN DESKTOP-0N7MAR7 --- [           main] o.h.o.deprecation                        : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-03 02:02:20.776  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-02-03 02:02:21.054  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@283a8ad6
+2023-02-03 02:02:21.057  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-02-03 02:02:21.111  INFO DESKTOP-0N7MAR7 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-03 02:02:22.571  INFO DESKTOP-0N7MAR7 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-03 02:02:22.587  INFO DESKTOP-0N7MAR7 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03 02:02:23.108  WARN DESKTOP-0N7MAR7 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-03 02:02:23.553  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-3004"]
+2023-02-03 02:02:23.595  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 3004 (http) with context path ''
+2023-02-03 02:02:23.607  INFO DESKTOP-0N7MAR7 --- [           main] c.B.D.DefectEntryService                 : Started DefectEntryService in 7.057 seconds (process running for 8.903)
+2023-02-03 02:08:08.342  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-03 02:08:08.342  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-02-03 02:08:08.344  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-02-03 02:08:08.451  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-2] c.B.D.r.DefectEntryServiceController     : New vehicle request received parameters:NewVehicleRequest(model=tesla)
+2023-02-03 02:08:08.467  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-2] c.B.D.r.DefectEntryServiceController     : Role check request sent parameters: role:OPERATOR token:Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTIwMDkzNCwiZXhwIjoxNjc1MjM2OTM0fQ.ZIcHViyVKRpnAh_neeevStx1T_aEfgvVugMT5NQJZaKNk2nSh5apKVcUcBAbkhcE
+2023-02-03 02:08:08.537 ERROR DESKTOP-0N7MAR7 --- [nio-3004-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.HttpClientErrorException$Forbidden: 403 : [no body]] with root cause
+org.springframework.web.client.HttpClientErrorException$Forbidden: 403 : [no body]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:109)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:183)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:137)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:915)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:864)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:481)
+	at com.BurakAciker.DefectEntryService.service.RestRequestsServiceImpl.roleCheck(RestRequestsServiceImpl.java:28)
+	at com.BurakAciker.DefectEntryService.resource.DefectEntryServiceController.addVehicle(DefectEntryServiceController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-03 02:08:14.514  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-4] c.B.D.r.DefectEntryServiceController     : New vehicle request received parameters:NewVehicleRequest(model=tesla)
+2023-02-03 02:08:14.515  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-4] c.B.D.r.DefectEntryServiceController     : Role check request sent parameters: role:OPERATOR token:Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTM3OTI3MywiZXhwIjoxNjc1NDE1MjczfQ.xjgZwkbWUZJit6OvXYZl18VypftuBl3wQtA6cule8lVA8f7zHHeDIIVEQ7_7X605
+2023-02-03 02:08:14.578  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-4] c.B.D.s.VehicleDefectServiceImpl         : New vehicle method parameters:NewVehicleRequest(model=tesla)
