@@ -41,8 +41,8 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
-    public void deleteRole(@NotNull Role role) {
-        Role deletedrole=roleRepository.findByName(role.getName());
+    public void deleteRole(@NotNull String rolename) {
+        Role deletedrole=roleRepository.findByName(rolename);
         if(deletedrole == null) {
             throw new RuntimeException("Role not found");
         }

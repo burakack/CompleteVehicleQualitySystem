@@ -20,8 +20,8 @@ public interface RoleService {
 
     /**
      * Bir rolü siler.
-     * @param role
+     * @param roleName
      * Kullanıcı nesnesi
      */
-    void deleteRole(Role role);
+    void deleteRole(String roleName);
 }
