@@ -1,0 +1,1 @@
+2023-02-03 17:16:50.154  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=testUser, password=testPassword)

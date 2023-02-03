@@ -30,9 +30,9 @@ public class VehicleDefectServiceImpl implements VehicleDefectService{
         return vehicleRepository.save(new Vehicle(newVehicleRequest.getModel()));
     }
 
-    public VehicleDefect newVehicleDefect(String defectName, String defectDescription){
+    public VehicleDefect newVehicleDefect(String defectName, String defectDescription,String OperatorName){
         logger.info("New vehicle defect method parameters: Defectname:"+defectName+"   DefectnameDescription"+defectDescription);
-        return vehicleDefectRepository.save(new VehicleDefect(defectName,defectDescription));
+        return vehicleDefectRepository.save(new VehicleDefect(defectName,defectDescription,OperatorName));
 
     }
     public Location newLocation(Location location){

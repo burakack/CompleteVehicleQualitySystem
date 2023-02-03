@@ -18,10 +18,12 @@ public class VehicleDefect {
     Long id;
     String defectName;
     String defectDescription;
+    String Operator;
     @ManyToMany(fetch = FetchType.EAGER)
     List<Location> locations=new ArrayList<>();
 
-    public VehicleDefect(String defectName, String description) {
+    public VehicleDefect(String defectName, String description, String operator) {
+        this.Operator = operator;
         this.defectName = defectName;
         this.defectDescription = description;
     }

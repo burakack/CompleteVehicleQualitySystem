@@ -33,9 +33,9 @@ Otherwise you have to run all microservices manually.
   POST http://localhost:3000/api/v1/auth/authenticate
 ```
 
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `token` | `string` | **Required**. Token. |
+| Parametre | Tip      | Açıklama             |
+|:----------|:---------|:---------------------|
+| `token`   | `string` | **Required**. Token. |
 - Response
 ```javascript
 {} with 200 status codewith 200
@@ -46,9 +46,9 @@ Otherwise you have to run all microservices manually.
   POST http://localhost:3000/api/v1/auth/isADMIN
 ```
 
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `token` | `string` | **Required**. Token. |
+| Parametre | Tip      | Açıklama             |
+|:----------|:---------|:---------------------|
+| `token`   | `string` | **Required**. Token. |
 - Response
 ```javascript
 {} with 200 status code
@@ -60,9 +60,9 @@ Otherwise you have to run all microservices manually.
   POST http://localhost:3000/api/v1/auth/isOPERATOR
 ```
 
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `token` | `string` | **Required**. Token. |
+| Parametre | Tip      | Açıklama             |
+|:----------|:---------|:---------------------|
+| `token`   | `string` | **Required**. Token. |
 - Response
 ```javascript
 {} with 200 status code
@@ -72,9 +72,9 @@ Otherwise you have to run all microservices manually.
   POST http://localhost:3000/api/v1/auth/isTEAMLEAD
 ```
 
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `token` | `string` | **Required**. Token. |
+| Parametre | Tip      | Açıklama             |
+|:----------|:---------|:---------------------|
+| `token`   | `string` | **Required**. Token. |
 
 ## User Management Service
 ### New User
@@ -83,14 +83,14 @@ Otherwise you have to run all microservices manually.
 ```http
   POST http://localhost:3002/api/v1/user-management/add-user
 ```
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `token` | `string` | **Required**. Token. |
-| `username` | `string` | **Required**. |
-| `password` | `string` | **Required**.|
-| `email` | `string` | **Required** |
-| `name` | `string` | |
-| `surname` | `string` | |
+| Parametre  | Tip      | Açıklama             |
+|:-----------|:---------|:---------------------|
+| `token`    | `string` | **Required**. Token. |
+| `username` | `string` | **Required**.        |
+| `password` | `string` | **Required**.        |
+| `email`    | `string` | **Required**         |
+| `name`     | `string` |                      |
+| `surname`  | `string` |                      |
 - Response 
 ```javascript
 User Created Succesfully
@@ -101,10 +101,10 @@ User Created Succesfully
 ```http
   DELETE http://localhost:3002/api/v1/user-management/delete-user
 ```
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `token` | `string` | **Required**. Token. |
-| `username` | `string` | **Required**. |
+| Parametre  | Tip      | Açıklama             |
+|:-----------|:---------|:---------------------|
+| `token`    | `string` | **Required**. Token. |
+| `username` | `string` | **Required**.        |
 - Response 
 ```javascript
 {} with 200 status code
@@ -115,10 +115,10 @@ User Created Succesfully
 ```http
   POST http://localhost:3002/api/v1/user-management/add-role-to-user
 ```
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `token` | `string` | **Required**. Token. |
-| `username` | `string` | **Required**. |
+| Parametre  | Tip      | Açıklama             |
+|:-----------|:---------|:---------------------|
+| `token`    | `string` | **Required**. Token. |
+| `username` | `string` | **Required**.        |
 - Response 
 ```javascript
 {} with 200 status code
@@ -131,9 +131,9 @@ User Created Succesfully
 ```http
   GET http://localhost:3003/api/v1/defect-list/:page/:pagesize/:sortvariable
 ```
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `token` | `string` | **Required**. Token. |
+| Parametre | Tip      | Açıklama             |
+|:----------|:---------|:---------------------|
+| `token`   | `string` | **Required**. Token. |
 
 - Response 
 
@@ -188,10 +188,10 @@ User Created Succesfully
 ```http
   POST http://localhost:3004/api/v1/defect-entry/new-vehicle
 ```
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `token` | `string` | **Required**. Token. |
-| `model` | `string` |  |
+| Parametre | Tip      | Açıklama             |
+|:----------|:---------|:---------------------|
+| `token`   | `string` | **Required**. Token. |
+| `model`   | `string` |                      |
 
 - Response 
 
@@ -205,14 +205,15 @@ User Created Succesfully
 ```http
   POST http://localhost:3004/api/v1/defect-entry/new-vehicle
 ```
-| Parametre | Tip     | Açıklama                |
-| :-------- | :------- | :------------------------- |
-| `token` | `string` | **Required**. Token. |
-| `vehicleId` | `string` |  |
-| `defectName` | `string` |  |
-| `x` | `string` |  |
-| `y` | `string` |  |
-| `image` | `string` |  |
+| Parametre      | Tip      | Açıklama             |
+|:---------------|:---------|:---------------------|
+| `token`        | `string` | **Required**. Token. |
+| `vehicleId`    | `string` |                      |
+| `defectName`   | `string` |                      |
+| `operatorName` | `string` |                      |
+| `x`            | `string` |                      |
+| `y`            | `string` |                      |
+| `image`        | `string` |                      |
 
 - Response 
 

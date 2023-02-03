@@ -21,3 +21,29 @@
 2023-02-03 02:01:57.495  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-3001"]
 2023-02-03 02:01:57.570  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 3001 (http) with context path ''
 2023-02-03 02:01:57.599  INFO DESKTOP-0N7MAR7 --- [           main] c.B.T.TerminalService                    : Started TerminalService in 9.538 seconds (process running for 10.89)
+2023-02-03 23:09:37.513  INFO DESKTOP-0N7MAR7 --- [           main] c.B.T.TerminalService                    : Starting TerminalService using Java 17.0.5 with PID 19004 (C:\Users\burak\OneDrive\Masaüstü\CompleteVehicleQualitySystem\TerminalService\target\classes started by burak in C:\Users\burak\OneDrive\Masaüstü\CompleteVehicleQualitySystem)
+2023-02-03 23:09:37.533  INFO DESKTOP-0N7MAR7 --- [           main] c.B.T.TerminalService                    : No active profile set, falling back to 1 default profile: "default"
+2023-02-03 23:09:38.487  INFO DESKTOP-0N7MAR7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-03 23:09:38.512  INFO DESKTOP-0N7MAR7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2023-02-03 23:09:39.505  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 3001 (http)
+2023-02-03 23:09:39.526  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-3001"]
+2023-02-03 23:09:39.527  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-02-03 23:09:39.529  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-03 23:09:39.656  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-02-03 23:09:39.658  INFO DESKTOP-0N7MAR7 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2049 ms
+2023-02-03 23:09:39.900  INFO DESKTOP-0N7MAR7 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-03 23:09:40.007  INFO DESKTOP-0N7MAR7 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-03 23:09:40.276  WARN DESKTOP-0N7MAR7 --- [           main] o.h.o.deprecation                        : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-03 23:09:40.484  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-02-03 23:09:40.807  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d1bf7bf
+2023-02-03 23:09:40.810  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-02-03 23:09:40.878  INFO DESKTOP-0N7MAR7 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-03 23:09:41.368  INFO DESKTOP-0N7MAR7 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-03 23:09:41.384  INFO DESKTOP-0N7MAR7 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03 23:09:41.454  WARN DESKTOP-0N7MAR7 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-03 23:09:42.462  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-3001"]
+2023-02-03 23:09:42.543  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 3001 (http) with context path ''
+2023-02-03 23:09:42.580  INFO DESKTOP-0N7MAR7 --- [           main] c.B.T.TerminalService                    : Started TerminalService in 5.668 seconds (process running for 6.704)
+2023-02-03 23:38:57.213  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03 23:38:57.227  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-02-03 23:38:57.234  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

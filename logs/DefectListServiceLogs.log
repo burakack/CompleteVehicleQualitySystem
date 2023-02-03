@@ -21,3 +21,38 @@
 2023-02-03 02:02:08.532  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-3003"]
 2023-02-03 02:02:08.590  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 3003 (http) with context path ''
 2023-02-03 02:02:08.612  INFO DESKTOP-0N7MAR7 --- [           main] c.B.D.DefectListService                  : Started DefectListService in 9.148 seconds (process running for 10.585)
+2023-02-03 23:09:52.775  INFO DESKTOP-0N7MAR7 --- [           main] c.B.D.DefectListService                  : Starting DefectListService using Java 17.0.2 with PID 9416 (C:\Users\burak\OneDrive\Masaüstü\CompleteVehicleQualitySystem\DefectListService\target\classes started by burak in C:\Users\burak\OneDrive\Masaüstü\CompleteVehicleQualitySystem)
+2023-02-03 23:09:52.800  INFO DESKTOP-0N7MAR7 --- [           main] c.B.D.DefectListService                  : No active profile set, falling back to 1 default profile: "default"
+2023-02-03 23:09:54.236  INFO DESKTOP-0N7MAR7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-03 23:09:54.407  INFO DESKTOP-0N7MAR7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 3 JPA repository interfaces.
+2023-02-03 23:09:55.830  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 3003 (http)
+2023-02-03 23:09:55.857  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-3003"]
+2023-02-03 23:09:55.861  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-02-03 23:09:55.863  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-03 23:09:56.133  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-02-03 23:09:56.139  INFO DESKTOP-0N7MAR7 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3224 ms
+2023-02-03 23:09:56.594  INFO DESKTOP-0N7MAR7 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-03 23:09:56.775  INFO DESKTOP-0N7MAR7 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-03 23:09:57.244  WARN DESKTOP-0N7MAR7 --- [           main] o.h.o.deprecation                        : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-03 23:09:57.623  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-02-03 23:09:58.101  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20b54cfe
+2023-02-03 23:09:58.105  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-02-03 23:09:58.197  INFO DESKTOP-0N7MAR7 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-03 23:10:01.212  INFO DESKTOP-0N7MAR7 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-03 23:10:01.234  INFO DESKTOP-0N7MAR7 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03 23:10:02.139  WARN DESKTOP-0N7MAR7 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-03 23:10:03.912  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-3003"]
+2023-02-03 23:10:04.074  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 3003 (http) with context path ''
+2023-02-03 23:10:04.113  INFO DESKTOP-0N7MAR7 --- [           main] c.B.D.DefectListService                  : Started DefectListService in 12.237 seconds (process running for 14.069)
+2023-02-03 23:10:39.428  INFO DESKTOP-0N7MAR7 --- [nio-3003-exec-5] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-03 23:10:39.429  INFO DESKTOP-0N7MAR7 --- [nio-3003-exec-5] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-02-03 23:10:39.430  INFO DESKTOP-0N7MAR7 --- [nio-3003-exec-5] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-02-03 23:10:39.485  INFO DESKTOP-0N7MAR7 --- [nio-3003-exec-5] c.B.D.r.DefectListServiceController      : All vehicles with pagination request received page:0 pageSize:10 token:Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ1NTAyMCwiZXhwIjoxNjc1NDkxMDIwfQ.qkh9CxzbckpYoDPTEw1tnjTjvy4diEaTA4wtXeQYBnyMdetkWQZkmxoNh_v98Hyx
+2023-02-03 23:10:39.486  INFO DESKTOP-0N7MAR7 --- [nio-3003-exec-5] c.B.D.r.DefectListServiceController      : Role check request sent parameters: role:TEAMLEAD token:Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ1NTAyMCwiZXhwIjoxNjc1NDkxMDIwfQ.qkh9CxzbckpYoDPTEw1tnjTjvy4diEaTA4wtXeQYBnyMdetkWQZkmxoNh_v98Hyx
+2023-02-03 23:10:39.578  INFO DESKTOP-0N7MAR7 --- [nio-3003-exec-5] c.B.D.r.DefectListServiceController      : All vehicles with pagination method page:0 pageSize:10
+2023-02-03 23:12:12.714  INFO DESKTOP-0N7MAR7 --- [nio-3003-exec-8] c.B.D.r.DefectListServiceController      : All vehicles with pagination and sorting request received page:0 pageSize:10 field:model token:Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ1NTAyMCwiZXhwIjoxNjc1NDkxMDIwfQ.qkh9CxzbckpYoDPTEw1tnjTjvy4diEaTA4wtXeQYBnyMdetkWQZkmxoNh_v98Hyx
+2023-02-03 23:12:12.714  INFO DESKTOP-0N7MAR7 --- [nio-3003-exec-8] c.B.D.r.DefectListServiceController      : Role check request sent parameters: role:TEAMLEAD token:Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ1NTAyMCwiZXhwIjoxNjc1NDkxMDIwfQ.qkh9CxzbckpYoDPTEw1tnjTjvy4diEaTA4wtXeQYBnyMdetkWQZkmxoNh_v98Hyx
+2023-02-03 23:12:12.733  INFO DESKTOP-0N7MAR7 --- [nio-3003-exec-8] c.B.D.r.DefectListServiceController      : All vehicles with pagination and sorting method page:0 pageSize:10 field:model
+2023-02-03 23:38:58.511  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03 23:38:58.513  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-02-03 23:38:58.516  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

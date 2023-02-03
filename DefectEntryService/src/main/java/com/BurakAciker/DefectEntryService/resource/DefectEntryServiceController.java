@@ -26,7 +26,7 @@ public class DefectEntryServiceController {
 
         restService.roleCheck("OPERATOR",token);
 
-        VehicleDefect vd= service.newVehicleDefect(request.getDefectName(),request.getDescription());
+        VehicleDefect vd= service.newVehicleDefect(request.getDefectName(),request.getDescription(),request.getOperatorName());
 
         service.addLocationToVehicleDefect(vd.getId(), request.getX(), request.getY(), request.getImage());
 
