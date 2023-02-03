@@ -223,3 +223,31 @@ org.springframework.web.client.HttpClientErrorException$Forbidden: 403 : [no bod
 2023-02-03 23:38:59.735  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-02-03 23:38:59.737  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2023-02-03 23:38:59.742  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-02-04 01:30:31.870  INFO DESKTOP-0N7MAR7 --- [           main] c.B.U.UserManagementService              : Starting UserManagementService using Java 17.0.2 with PID 20672 (C:\Users\burak\OneDrive\Masaüstü\CompleteVehicleQualitySystem\UserManagementService\target\classes started by burak in C:\Users\burak\OneDrive\Masaüstü\CompleteVehicleQualitySystem)
+2023-02-04 01:30:31.883  INFO DESKTOP-0N7MAR7 --- [           main] c.B.U.UserManagementService              : No active profile set, falling back to 1 default profile: "default"
+2023-02-04 01:30:32.882  INFO DESKTOP-0N7MAR7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-04 01:30:32.971  INFO DESKTOP-0N7MAR7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2023-02-04 01:30:34.801  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 3002 (http)
+2023-02-04 01:30:34.823  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-3002"]
+2023-02-04 01:30:34.824  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-02-04 01:30:34.825  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-04 01:30:35.133  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-02-04 01:30:35.136  INFO DESKTOP-0N7MAR7 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3185 ms
+2023-02-04 01:30:35.557  INFO DESKTOP-0N7MAR7 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-04 01:30:35.725  INFO DESKTOP-0N7MAR7 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-04 01:30:36.102  WARN DESKTOP-0N7MAR7 --- [           main] o.h.o.deprecation                        : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-04 01:30:36.373  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-02-04 01:30:36.673  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5908e6d6
+2023-02-04 01:30:36.676  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-02-04 01:30:36.779  INFO DESKTOP-0N7MAR7 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-04 01:30:39.142  INFO DESKTOP-0N7MAR7 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-04 01:30:39.167  INFO DESKTOP-0N7MAR7 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-04 01:30:40.494  WARN DESKTOP-0N7MAR7 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-04 01:30:41.423  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-3002"]
+2023-02-04 01:30:41.489  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 3002 (http) with context path ''
+2023-02-04 01:30:41.528  INFO DESKTOP-0N7MAR7 --- [           main] c.B.U.UserManagementService              : Started UserManagementService in 10.13 seconds (process running for 11.84)
+2023-02-04 01:30:41.561  INFO DESKTOP-0N7MAR7 --- [           main] c.B.U.s.AppUserServiceImpl               : Registering user:RegisterRequest(name=adminname, surname=adminsurname, username=toyota, password=123toyota123, email=toyota@gmail.com)
+2023-02-04 01:30:42.203 ERROR DESKTOP-0N7MAR7 --- [           main] c.B.U.s.AppUserServiceImpl               : Username already exists.
+2023-02-04 01:53:45.401  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-04 01:53:45.406  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-02-04 01:53:45.413  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

@@ -213,3 +213,50 @@ org.springframework.web.client.HttpClientErrorException$Forbidden: 403 : [no bod
 2023-02-04 01:32:05.208  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-02-04 01:32:05.210  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2023-02-04 01:32:05.214  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-02-04 01:40:11.598  INFO DESKTOP-0N7MAR7 --- [           main] c.B.D.DefectEntryService                 : Starting DefectEntryService using Java 17.0.2 with PID 4668 (C:\Users\burak\OneDrive\Masaüstü\CompleteVehicleQualitySystem\DefectEntryService\target\classes started by burak in C:\Users\burak\OneDrive\Masaüstü\CompleteVehicleQualitySystem)
+2023-02-04 01:40:11.610  INFO DESKTOP-0N7MAR7 --- [           main] c.B.D.DefectEntryService                 : No active profile set, falling back to 1 default profile: "default"
+2023-02-04 01:40:12.326  INFO DESKTOP-0N7MAR7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-04 01:40:12.418  INFO DESKTOP-0N7MAR7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+2023-02-04 01:40:13.154  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 3004 (http)
+2023-02-04 01:40:13.168  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-3004"]
+2023-02-04 01:40:13.169  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-02-04 01:40:13.169  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-04 01:40:13.278  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-02-04 01:40:13.281  INFO DESKTOP-0N7MAR7 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1618 ms
+2023-02-04 01:40:13.505  INFO DESKTOP-0N7MAR7 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-04 01:40:13.564  INFO DESKTOP-0N7MAR7 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-04 01:40:13.732  WARN DESKTOP-0N7MAR7 --- [           main] o.h.o.deprecation                        : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-04 01:40:13.933  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-02-04 01:40:14.230  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@507049f2
+2023-02-04 01:40:14.235  INFO DESKTOP-0N7MAR7 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-02-04 01:40:14.281  INFO DESKTOP-0N7MAR7 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-04 01:40:15.702  INFO DESKTOP-0N7MAR7 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-04 01:40:15.714  INFO DESKTOP-0N7MAR7 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-04 01:40:16.277  WARN DESKTOP-0N7MAR7 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-04 01:40:16.746  INFO DESKTOP-0N7MAR7 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-3004"]
+2023-02-04 01:40:16.791  INFO DESKTOP-0N7MAR7 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 3004 (http) with context path ''
+2023-02-04 01:40:16.804  INFO DESKTOP-0N7MAR7 --- [           main] c.B.D.DefectEntryService                 : Started DefectEntryService in 5.663 seconds (process running for 6.616)
+2023-02-04 01:40:21.314  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-04 01:40:21.315  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-02-04 01:40:21.316  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-02-04 01:40:21.479  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-1] c.B.D.r.DefectEntryServiceController     : New entry request received parameters:NewEntryRequest(vehicleId=1, defectName=Cizik, description=Boya sökülmesi, operatorName=operatorname, x=32, y=47, image=resimdatası)
+2023-02-04 01:40:21.492  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-1] c.B.D.r.DefectEntryServiceController     : Role check request sent parameters: role:OPERATOR token:Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ2Mzk2NywiZXhwIjoxNjc1NDk5OTY3fQ.fgjUCEdhoSmiLafuPVFUFqK0UJx3dwAO4ESvpy4SgrkftidRuTh21UUFiurWGjw9
+2023-02-04 01:40:21.587  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-1] c.B.D.s.VehicleDefectServiceImpl         : New vehicle defect method parameters: Defectname:Cizik   DefectnameDescriptionBoya sökülmesi
+2023-02-04 01:40:21.653  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-1] c.B.D.s.VehicleDefectServiceImpl         : Add location to vehicle defect method parameters: VehicleDefectId:12   X:32   Y:47   Image:resimdatası
+2023-02-04 01:40:21.669  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-1] c.B.D.s.VehicleDefectServiceImpl         : New location method parameters: Location:Location(id=null, x=32, y=47, image=resimdatası)
+2023-02-04 01:40:21.684  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-1] c.B.D.s.VehicleDefectServiceImpl         : Add vehicle defect to vehicle method parameters: VehicleId:1   VehicleDefectId12
+2023-02-04 01:52:01.838  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-5] c.B.D.r.DefectEntryServiceController     : New entry request received parameters:NewEntryRequest(vehicleId=1, defectName=Cizik, description=Boya sökülmesi, operatorName=operatorname, x=32, y=47, image=resimdatası)
+2023-02-04 01:52:01.839  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-5] c.B.D.r.DefectEntryServiceController     : Role check request sent parameters: role:OPERATOR token:Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ2Mzk2NywiZXhwIjoxNjc1NDk5OTY3fQ.fgjUCEdhoSmiLafuPVFUFqK0UJx3dwAO4ESvpy4SgrkftidRuTh21UUFiurWGjw9
+2023-02-04 01:52:01.860  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-5] c.B.D.s.VehicleDefectServiceImpl         : New vehicle defect method parameters: Defectname:Cizik   DefectnameDescriptionBoya sökülmesi
+2023-02-04 01:52:01.868  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-5] c.B.D.s.VehicleDefectServiceImpl         : Add location to vehicle defect method parameters: VehicleDefectId:13   X:32   Y:47   Image:resimdatası
+2023-02-04 01:52:01.868  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-5] c.B.D.s.VehicleDefectServiceImpl         : New location method parameters: Location:Location(id=null, x=32, y=47, image=resimdatası)
+2023-02-04 01:52:01.871  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-5] c.B.D.s.VehicleDefectServiceImpl         : Add vehicle defect to vehicle method parameters: VehicleId:1   VehicleDefectId13
+2023-02-04 01:52:08.141  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-6] c.B.D.r.DefectEntryServiceController     : New entry request received parameters:NewEntryRequest(vehicleId=5, defectName=Cizik, description=Boya sökülmesi, operatorName=operatorname, x=32, y=47, image=resimdatası)
+2023-02-04 01:52:08.143  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-6] c.B.D.r.DefectEntryServiceController     : Role check request sent parameters: role:OPERATOR token:Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ2Mzk2NywiZXhwIjoxNjc1NDk5OTY3fQ.fgjUCEdhoSmiLafuPVFUFqK0UJx3dwAO4ESvpy4SgrkftidRuTh21UUFiurWGjw9
+2023-02-04 01:52:08.164  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-6] c.B.D.s.VehicleDefectServiceImpl         : New vehicle defect method parameters: Defectname:Cizik   DefectnameDescriptionBoya sökülmesi
+2023-02-04 01:52:08.171  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-6] c.B.D.s.VehicleDefectServiceImpl         : Add location to vehicle defect method parameters: VehicleDefectId:14   X:32   Y:47   Image:resimdatası
+2023-02-04 01:52:08.172  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-6] c.B.D.s.VehicleDefectServiceImpl         : New location method parameters: Location:Location(id=null, x=32, y=47, image=resimdatası)
+2023-02-04 01:52:08.173  INFO DESKTOP-0N7MAR7 --- [nio-3004-exec-6] c.B.D.s.VehicleDefectServiceImpl         : Add vehicle defect to vehicle method parameters: VehicleId:5   VehicleDefectId14
+2023-02-04 01:53:45.543  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-04 01:53:45.546  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-02-04 01:53:45.549  INFO DESKTOP-0N7MAR7 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
