@@ -25,7 +25,6 @@ public class TerminalServiceController {
     @GetMapping("/all")
     public List<Terminal> getAll(){
 
-        repository.save(new Terminal("a",true));
         logger.info("All terminals request received token:");
         return service.findAll();
     }
