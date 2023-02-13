@@ -34,6 +34,12 @@ public interface AppUserService {
      * Kullanıcı nesnesi
      */
     void updateAppUser(AppUser appUser);
-
+    /**
+     * Bir kullanıcıya bir rol ekler.
+     * @param username
+     * Kullanıcı adı
+     * @param rolename
+     * Rol adı
+     */
     void addRoleToUser(String username, String rolename);
 }
