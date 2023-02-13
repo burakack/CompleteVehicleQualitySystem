@@ -3,7 +3,7 @@
 
 This project deals with the management and storage of errors in manufactured vehicles.
 
-## Bilgisayarınızda Çalıştırın
+## Run it on your computer
 
 Clone Project
 
@@ -33,7 +33,7 @@ Otherwise you have to run all microservices manually.
   POST http://localhost:3000/api/v1/auth/authenticate
 ```
 
-| Parametre | Tip      | Açıklama             |
+| Parameter | Type     | Description          |
 |:----------|:---------|:---------------------|
 | `token`   | `string` | **Required**. Token. |
 - Response
@@ -46,7 +46,7 @@ Otherwise you have to run all microservices manually.
   POST http://localhost:3000/api/v1/auth/isADMIN
 ```
 
-| Parametre | Tip      | Açıklama             |
+| Parameter | Type     | Description          |
 |:----------|:---------|:---------------------|
 | `token`   | `string` | **Required**. Token. |
 - Response
@@ -60,7 +60,7 @@ Otherwise you have to run all microservices manually.
   POST http://localhost:3000/api/v1/auth/isOPERATOR
 ```
 
-| Parametre | Tip      | Açıklama             |
+| Parameter | Type     | Description          |
 |:----------|:---------|:---------------------|
 | `token`   | `string` | **Required**. Token. |
 - Response
@@ -72,7 +72,7 @@ Otherwise you have to run all microservices manually.
   POST http://localhost:3000/api/v1/auth/isTEAMLEAD
 ```
 
-| Parametre | Tip      | Açıklama             |
+| Parameter | Type     | Description          |
 |:----------|:---------|:---------------------|
 | `token`   | `string` | **Required**. Token. |
 
@@ -83,7 +83,7 @@ Otherwise you have to run all microservices manually.
 ```http
   POST http://localhost:3002/api/v1/user-management/add-user
 ```
-| Parametre  | Tip      | Açıklama             |
+| Parameter  | Type     | Description          |
 |:-----------|:---------|:---------------------|
 | `token`    | `string` | **Required**. Token. |
 | `username` | `string` | **Required**.        |
@@ -101,7 +101,7 @@ User Created Succesfully
 ```http
   DELETE http://localhost:3002/api/v1/user-management/delete-user
 ```
-| Parametre  | Tip      | Açıklama             |
+| Parameter  | Type     | Description          |
 |:-----------|:---------|:---------------------|
 | `token`    | `string` | **Required**. Token. |
 | `username` | `string` | **Required**.        |
@@ -115,7 +115,7 @@ User Created Succesfully
 ```http
   POST http://localhost:3002/api/v1/user-management/add-role-to-user
 ```
-| Parametre  | Tip      | Açıklama             |
+| Parameter  | Type     | Description          |
 |:-----------|:---------|:---------------------|
 | `token`    | `string` | **Required**. Token. |
 | `username` | `string` | **Required**.        |
@@ -131,7 +131,7 @@ User Created Succesfully
 ```http
   GET http://localhost:3003/api/v1/defect-list/:page/:pagesize/:sortvariable
 ```
-| Parametre | Tip      | Açıklama             |
+| Parameter | Type     | Description          |
 |:----------|:---------|:---------------------|
 | `token`   | `string` | **Required**. Token. |
 
@@ -186,7 +186,7 @@ User Created Succesfully
 ```http
   GET http://localhost:3003/api/v1/defect-list/all/:sortvariable
 ```
-| Parametre | Tip      | Açıklama             |
+| Parameter | Type     | Description          |
 |:----------|:---------|:---------------------|
 | `token`   | `string` | **Required**. Token. |
 
@@ -241,7 +241,7 @@ User Created Succesfully
 ```http
   GET http://localhost:3003/api/v1/defect-list/:page/:pagesize
 ```
-| Parametre | Tip      | Açıklama             |
+| Parameter | Type     | Description          |
 |:----------|:---------|:---------------------|
 | `token`   | `string` | **Required**. Token. |
 
@@ -297,7 +297,7 @@ User Created Succesfully
 ```http
   POST http://localhost:3004/api/v1/defect-entry/new-vehicle
 ```
-| Parametre | Tip      | Açıklama             |
+| Parameter | Type     | Description          |
 |:----------|:---------|:---------------------|
 | `token`   | `string` | **Required**. Token. |
 | `model`   | `string` |                      |
@@ -314,7 +314,7 @@ User Created Succesfully
 ```http
   POST http://localhost:3004/api/v1/defect-entry/new-vehicle
 ```
-| Parametre      | Tip      | Açıklama             |
+| Parameter      | Type     | Description          |
 |:---------------|:---------|:---------------------|
 | `token`        | `string` | **Required**. Token. |
 | `vehicleId`    | `string` |                      |
@@ -329,7 +329,6 @@ User Created Succesfully
 ```javascript
 {} with 200 status code
 ```
-TERMİNAL OLAYI 
 ## Terminal Service
 ### Terminal Service
 ### Get Terminals With Sorting And Pagination
@@ -338,9 +337,6 @@ TERMİNAL OLAYI
 ```http
   GET http://localhost:3003/api/v1/defect-list/:page/:pagesize/:sortvariable
 ```
-| Parametre | Tip      | Açıklama             |
-|:----------|:---------|:---------------------|
-| `token`   | `string` | **Required**. Token. |
 
 - Response
 
@@ -391,10 +387,6 @@ TERMİNAL OLAYI
 ```http
   GET http://localhost:3003/api/v1/defect-list/all/:sortvariable
 ```
-| Parametre | Tip      | Açıklama             |
-|:----------|:---------|:---------------------|
-| `token`   | `string` | **Required**. Token. |
-
 - Response
 
 
@@ -435,9 +427,6 @@ TERMİNAL OLAYI
 ```http
   GET http://localhost:3003/api/v1/defect-list/:page/:pagesize
 ```
-| Parametre | Tip      | Açıklama             |
-|:----------|:---------|:---------------------|
-| `token`   | `string` | **Required**. Token. |
 
 - Response
 
