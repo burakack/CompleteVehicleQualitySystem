@@ -1,1 +1,150 @@
 2023-02-03 17:16:50.154  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=testUser, password=testPassword)
+2023-02-13 16:28:34.751  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=123toyota123)
+2023-02-13 16:29:36.296  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=123toyota123)
+2023-02-13 16:30:33.909  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=123toyota123)
+2023-02-13 16:30:33.921  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=123toyota123)
+2023-02-13 16:30:42.190  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=123toyota123)
+2023-02-13 16:34:22.557  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=123toyota123)
+2023-02-13 16:34:22.576  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=drgrsd)
+2023-02-13 16:45:19.142  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=123toyota123)
+2023-02-13 16:49:45.730  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=drgrsd)
+2023-02-13 16:53:25.102  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=drgrsd)
+2023-02-13 16:54:49.763  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=drgrsd)
+2023-02-13 16:55:24.497  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=drgrsd)
+2023-02-13 16:55:54.279  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=drgrsd)
+2023-02-13 16:56:36.776  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=123toyota123)
+2023-02-13 16:56:36.815  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=drgrsd)
+2023-02-13 17:01:12.882  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=123toyota123)
+2023-02-13 17:01:12.910  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.AuthenticationServiceImpl        : Authenticate service auth method:AuthenticationRequest(username=toyota, password=drgrsd)
+2023-02-13 17:01:16.315  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:02:08.489  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=Mon Feb 13 17:02:08 TRT 2023, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:03:24.995  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=Mon Feb 13 17:03:24 TRT 2023, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:03:25.003  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:05:45.517  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:05:45.526  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:05:58.113  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:05:58.123  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:06:20.148  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:06:39.190  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:06:39.202  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:09:04.425  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:09:04.434  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:09:43.876  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:09:43.889  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:10:37.448  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:10:37.462  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:11:01.490  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:11:01.499  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:11:47.566  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:11:47.573  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:12:13.184  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:12:13.197  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:12:45.288  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:12:45.306  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:17:18.105  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:17:18.113  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:18:01.778  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:18:01.786  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:18:37.514  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:18:37.524  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:19:05.785  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:19:05.794  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:20:05.429  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:20:05.441  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:20:32.586  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:20:32.594  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:22:13.825  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:22:13.836  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:24:09.754  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:24:09.763  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:24:43.242  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:24:43.252  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:29:45.180  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:29:45.189  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:30:48.253  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:30:48.263  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:31:12.777  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:31:12.790  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:31:31.708  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:31:31.719  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:31:31.733  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:31:31.734  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:32:05.455  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:32:05.466  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:32:05.480  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:32:05.482  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:32:23.011  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:32:23.020  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:32:23.034  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:32:23.035  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:35:25.504  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:35:25.526  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role not found
+2023-02-13 17:36:50.003  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:36:50.030  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role found: Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:36:57.389  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:36:57.401  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:36:57.415  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:36:57.416  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role found: Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:36:57.420  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:36:57.434  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:36:57.435  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:38:50.566  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:38:50.578  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:38:50.592  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:38:50.592  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role found: Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:38:50.597  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:38:50.598  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role not found
+2023-02-13 17:38:50.605  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:38:50.606  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:39:10.633  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:39:10.646  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:39:10.659  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:39:10.660  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role found: Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:39:10.670  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:39:10.672  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role not found
+2023-02-13 17:39:10.678  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:39:10.678  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:45:56.176  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Delete role service method rolename:ADMIN
+2023-02-13 17:45:56.194  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role deletedRole(id=null, name=ADMIN, createdAt=Mon Feb 13 17:45:56 TRT 2023, updatedAt=Mon Feb 13 17:45:56 TRT 2023, deletedAt=null)
+2023-02-13 17:47:00.468  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Delete role service method rolename:ADMIN
+2023-02-13 17:47:00.480  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role deletedRole(id=null, name=ADMIN, createdAt=Mon Feb 13 17:47:00 TRT 2023, updatedAt=Mon Feb 13 17:47:00 TRT 2023, deletedAt=null)
+2023-02-13 17:47:25.382  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Delete role service method rolename:ADMIN
+2023-02-13 17:47:25.395  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role deletedRole(id=null, name=ADMIN, createdAt=Mon Feb 13 17:47:25 TRT 2023, updatedAt=Mon Feb 13 17:47:25 TRT 2023, deletedAt=null)
+2023-02-13 17:47:32.509  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Delete role service method rolename:ADMIN
+2023-02-13 17:47:32.518  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already deleted
+2023-02-13 17:47:41.288  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:47:41.298  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:47:41.312  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:47:41.313  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role found: Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:47:41.326  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:47:41.326  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role not found
+2023-02-13 17:47:41.335  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:47:41.336  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:47:41.341  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Delete role service method rolename:ADMIN
+2023-02-13 17:47:41.342  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role deletedRole(id=null, name=ADMIN, createdAt=Mon Feb 13 17:47:41 TRT 2023, updatedAt=Mon Feb 13 17:47:41 TRT 2023, deletedAt=null)
+2023-02-13 17:47:41.345  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Delete role service method rolename:ADMIN
+2023-02-13 17:47:41.346  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already deleted
+2023-02-13 17:48:08.781  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:48:08.793  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:48:08.806  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:48:08.807  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role found: Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:48:08.819  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:48:08.819  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role not found
+2023-02-13 17:48:08.827  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:48:08.828  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:48:08.833  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Delete role service method rolename:ADMIN
+2023-02-13 17:48:08.834  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role deletedRole(id=null, name=ADMIN, createdAt=Mon Feb 13 17:48:08 TRT 2023, updatedAt=Mon Feb 13 17:48:08 TRT 2023, deletedAt=null)
+2023-02-13 17:48:08.837  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Delete role service method rolename:ADMIN
+2023-02-13 17:48:08.838  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already deleted
+2023-02-13 17:48:21.269  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:48:21.280  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already exists
+2023-02-13 17:48:21.293  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:48:21.294  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role found: Role(id=null, name=ADMIN, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:48:21.307  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Get role by name role name:ADMIN
+2023-02-13 17:48:21.308  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role not found
+2023-02-13 17:48:21.317  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Create role service method:Role(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:48:21.319  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role createdRole(id=null, name=erfdhfdh, createdAt=null, updatedAt=null, deletedAt=null)
+2023-02-13 17:48:21.324  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Delete role service method rolename:ADMIN
+2023-02-13 17:48:21.325  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role deletedRole(id=null, name=ADMIN, createdAt=Mon Feb 13 17:48:21 TRT 2023, updatedAt=Mon Feb 13 17:48:21 TRT 2023, deletedAt=null)
+2023-02-13 17:48:21.328  INFO DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Delete role service method rolename:ADMIN
+2023-02-13 17:48:21.328  WARN DESKTOP-0N7MAR7 --- [           main] c.B.A.s.RoleServiceImpl                  : Role already deleted

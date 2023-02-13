@@ -32,4 +32,17 @@ public class Role {
     public Role(String rolename) {
         this.name = rolename;
     }
+
+    public Role(String erfdhfdh, Date createdAt, Date updatedAt, Date deletedAt) {
+        this.name = erfdhfdh;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.deletedAt = deletedAt;
+    }
+
+    public Role(String erfdhfdh, Date createdAt, Date updatedAt) {
+        this.name = erfdhfdh;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
 }
