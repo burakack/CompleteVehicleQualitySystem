@@ -53,7 +53,7 @@ public class AppUserServiceImpl implements AppUserService {
         logger.info("Getting user by username:"+username);
         AppUser user=userRepository.findByUsername(username);
         if(user!=null && user.getDeletedAt()!=null ) {
-            logger.error("User found successfully.");
+            logger.info("User found successfully.");
             return user;
         }
         else{

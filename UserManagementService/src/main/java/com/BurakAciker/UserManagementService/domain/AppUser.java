@@ -48,6 +48,19 @@ public class AppUser implements UserDetails {
         this.password = password;
     }
 
+    public AppUser(long id, String email, String username, String name, String açıker, String password, Date createdAt, Date updatedAt, Date deletedAt) {
+        this.id = id;
+        this.email = email;
+        this.username = username;
+        this.name = name;
+        this.surname = açıker;
+        this.password = password;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.deletedAt = deletedAt;
+
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();
