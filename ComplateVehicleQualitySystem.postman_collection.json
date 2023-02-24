@@ -1,0 +1,679 @@
+{
+	"info": {
+		"_postman_id": "2fab22ff-797e-42ee-a88c-af9c5060c2fa",
+		"name": "ComplateVehicleQualitySystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21533866"
+	},
+	"item": [
+		{
+			"name": "AuthService",
+			"item": [
+				{
+					"name": "Authenticate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"burakack\",\r\n    \"password\":\"mert2010\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "İs ADMIN",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTI3NzA2OCwiZXhwIjoxNjc1MzEzMDY4fQ.jDIAUNrhCuv4qd4T5HSPNYwJhmJMdQbFu617XIedN5I7zulIb-p-92Zy2PiFLu7S",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/isADMIN",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"isADMIN"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "İs TEAMLEAD",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTEzMTgxMiwiZXhwIjoxNjc1MTY3ODEyfQ.o-aOiSF4N97JcYGeYDieQJDJ3Wm5wv_5pjvzTJb342GR2Qi-U5z7E3ehkFhtl7OI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/isTEAMLEAD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"isTEAMLEAD"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "İs OPERATOR",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTEzMTgxMiwiZXhwIjoxNjc1MTY3ODEyfQ.o-aOiSF4N97JcYGeYDieQJDJ3Wm5wv_5pjvzTJb342GR2Qi-U5z7E3ehkFhtl7OI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/isOPERATOR",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"isOPERATOR"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UserManagementService",
+			"item": [
+				{
+					"name": "New User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTIxNDkwNCwiZXhwIjoxNjc1MjUwOTA0fQ.Pa9lgAytqWAdl40b6I10ebYuXoNeY6gE0Ee44reAH0uoVWEDKGATN6pnSCYAP1Yq",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"nane\",\r\n\"surname\":\"limon\",\r\n\"username\":\"burakack\",\r\n\"password\":\"burakack\",\r\n\"email\":\"burak@hotmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/v1/user-management/add-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"user-management",
+								"add-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTAzMDE3MiwiZXhwIjoxNjc1MDY2MTcyfQ.Kuopa--Jyji6SDvgjh6Nqt64iE0vXEC9oa5oeMhb5N83jnkPmLXOMNjs_gERbKpW",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"ofsaytimsi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/v1/user-management/delete-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"user-management",
+								"delete-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add role to user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTEzMjAyMSwiZXhwIjoxNjc1MTY4MDIxfQ.wDuXgqDFNRRjXhvjWcy2u8yaXPV-pKkVxCcfKgZ4zKhF9kTNKVtbg-CYrdsDe7Ss",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"burakack\",\r\n    \"roleName\":\"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/v1/user-management/add-role-to-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"user-management",
+								"add-role-to-user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TerminalService",
+			"item": [
+				{
+					"name": "Get Terminals With Sorting and pagination",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/terminal/0/1/terminalName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"terminal",
+								"0",
+								"1",
+								"terminalName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Terminals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/terminal/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"terminal",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Terminals With Sorting",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/terminal/all/terminalName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"terminal",
+								"all",
+								"terminalName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Terminals With Pagination",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/terminal/0/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"terminal",
+								"0",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DefectListService",
+			"item": [
+				{
+					"name": "Defect Listing With Sorting And Pagination",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTIwMDkzNCwiZXhwIjoxNjc1MjM2OTM0fQ.ZIcHViyVKRpnAh_neeevStx1T_aEfgvVugMT5NQJZaKNk2nSh5apKVcUcBAbkhcE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/v1/defect-list/0/10/model",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"defect-list",
+								"0",
+								"10",
+								"model"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Defect Listing With Sorting",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ3NjgyOSwiZXhwIjoxNjc1NTEyODI5fQ.31c4s9EI-GosaC7L8jeN907GAq-TCZD7wvBfL_BH6ehuSJcYqSlC4bTNXHiXA82I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/v1/defect-list/all/model",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"defect-list",
+								"all",
+								"model"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Defect Listing Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ3NTUwNCwiZXhwIjoxNjc1NTExNTA0fQ.Gv3qCro2wHYZqOlcVP4wp7aLoqld4pSvWnCgJeKYctVAl2tzlOptftk6YrGwlzC6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/v1/defect-list/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"defect-list",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Defect Listing Get All With Sorting",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ3NTUwNCwiZXhwIjoxNjc1NTExNTA0fQ.Gv3qCro2wHYZqOlcVP4wp7aLoqld4pSvWnCgJeKYctVAl2tzlOptftk6YrGwlzC6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/v1/defect-list/all/model",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"defect-list",
+								"all",
+								"model"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DefectEntryService",
+			"item": [
+				{
+					"name": "New Defect Entry",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTQ2Mzk2NywiZXhwIjoxNjc1NDk5OTY3fQ.fgjUCEdhoSmiLafuPVFUFqK0UJx3dwAO4ESvpy4SgrkftidRuTh21UUFiurWGjw9",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleId\":5,\r\n     \"defectName\":\"Cizik\",\r\n     \"operatorName\":\"operatorname\",\r\n     \"description\":\"Boya sökülmesi\",\r\n     \"x\":32,\r\n     \"y\":47,\r\n    \"image\":\"resimdatası\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/v1/defect-entry/new-entry",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"v1",
+								"defect-entry",
+								"new-entry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Car",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJidXJha2FjayIsImlhdCI6MTY3NTIwMDkzNCwiZXhwIjoxNjc1MjM2OTM0fQ.ZIcHViyVKRpnAh_neeevStx1T_aEfgvVugMT5NQJZaKNk2nSh5apKVcUcBAbkhcE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"model\":\"arabamodeli\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/v1/defect-entry/new-vehicle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"v1",
+								"defect-entry",
+								"new-vehicle"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
