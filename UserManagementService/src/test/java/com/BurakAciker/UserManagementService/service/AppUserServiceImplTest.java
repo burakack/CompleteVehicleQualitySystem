@@ -40,15 +40,6 @@ class AppUserServiceImplTest {
         Mockito.verify(userRepository).findByUsername("burakack");
         Mockito.verify(userRepository).findByEmail("burak_ack@hotmail.com");
     }
-    @Test
-    void registerWithValidNotParameters() {
-        RegisterRequest request=new RegisterRequest("burak","açıker", "burakack", "abc", "burak_ack@hotmail.com");
-        AppUser user=new AppUser("burak_ack@hotmail.com","burakack", "burak", "açıker", "abc");
-        when(userRepository.findByUsername("burak")).thenReturn(null);
-        when(userRepository.findByEmail("burak_ack@hotmail.com")).thenReturn(user);
-        assertThrowsExactly(ArithmeticException.class,()->appUserService.register(request));
-        Mockito.verify(userRepository).findByEmail("burak_ack@hotmail.com");
-    }
 
     @Test
     void getAppUserByUsernameWithValidParameters() {

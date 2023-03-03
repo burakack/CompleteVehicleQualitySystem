@@ -15,12 +15,12 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class RestRequestsServiceImpl implements RestRequestsService {
     private final Logger logger = LogManager.getLogger(DefectEntryServiceController.class);
-    @Value("${host}")
-    private String host;
+    @Value("${authServiceName:localhost}")
+    private String authServiceName;
     @Override
     public String roleCheck (String role, String token) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://"+host+":3000/api/v1/auth/is"+role;
+        String url = "http://"+authServiceName+":3000/api/v1/auth/is"+role;
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization", token);
         HttpEntity<Object> entity = new HttpEntity<>(headers);

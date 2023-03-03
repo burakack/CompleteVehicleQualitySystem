@@ -28,24 +28,24 @@ public class AppUserServiceImpl implements AppUserService {
         logger.info("Registering user:"+request.toString());
 
         if(userRepository.findByUsername(request.getUsername())!=null) {
-            logger.error("Username already exists.");
-            throw new ArithmeticException("Username already exists.");
+            logger.info("Username already exists.");
         }
-        if(userRepository.findByEmail(request.getEmail())!=null) {
-            logger.error("Email already exists.");
-            throw new ArithmeticException("Email already exists.");
+        else if(userRepository.findByEmail(request.getEmail())!=null) {
+            logger.info("Email already exists.");
         }
-
-        var user = AppUser.builder()
-                .name(request.getName())
-                .surname(request.getSurname())
-                .username(request.getUsername())
-                .email(request.getEmail())
-                .password(  new BCryptPasswordEncoder().encode(request.getPassword()))
-                .build();
-        userRepository.save(user);
-        logger.info("User created successfully.");
-        return ResponseEntity.ok("User created successfully.");
+        else{
+            var user = AppUser.builder()
+                    .name(request.getName())
+                    .surname(request.getSurname())
+                    .username(request.getUsername())
+                    .email(request.getEmail())
+                    .password(  new BCryptPasswordEncoder().encode(request.getPassword()))
+                    .build();
+            userRepository.save(user);
+            logger.info("User created successfully.");
+            return ResponseEntity.ok("User created successfully.");
+        }
+        return ResponseEntity.badRequest().body("User could not be created.");
     }
 
     @Override

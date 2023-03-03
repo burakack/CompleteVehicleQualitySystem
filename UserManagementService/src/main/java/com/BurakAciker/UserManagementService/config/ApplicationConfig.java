@@ -26,8 +26,8 @@ public class ApplicationConfig {
                 appUserService.register(new RegisterRequest("adminname", "adminsurname", "toyota",
                         "123toyota123", "toyota@gmail.com"));
                 System.out.println("ADMIN User created");
+                appUserService.addRoleToUser("toyota", "ADMIN");
             }catch (Exception e) {
-
                 System.out.println(e.getMessage());
             }
         };
